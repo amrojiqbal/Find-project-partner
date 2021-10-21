@@ -1,0 +1,28 @@
+{
+  "name": "tinder-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix fpp-frontend && npm run build --prefix fpp-frontend"
+  },
+  "author": "Iqbal Khan",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^4.1.1",
+    "mongoose": "^6.0.5",
+    "multer": "^1.4.3",
+    "path": "^0.12.7",
+    "pusher": "^5.0.0",
+    "pusher-js": "^7.0.3",
+    "validate": "^5.1.0",
+    "validator": "^13.6.0"
+  }
+}

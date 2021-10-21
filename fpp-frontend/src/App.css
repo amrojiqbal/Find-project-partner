@@ -1,0 +1,46 @@
+.App {
+  text-align: center;
+}
+.app{
+  display: grid;
+  place-items: center;
+  height: 86vh;
+
+}
+.app_body{
+  display: flex;
+  background-color: white;
+  box-shadow: 20px 20px 20px -7px black;
+
+  width: 80vw;
+  height: 82vh;
+  position: relative;
+
+  border-radius: 10px;
+
+  /* overflow: scroll; */
+}
+.body-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nochat{
+  flex:0.7;
+  background-image: url("./image/nochat.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media screen and (max-width:800px) {
+    .body-form{
+      flex-direction: column;
+    }
+}
+@media screen and (max-width:500px) {
+    .app_body{
+      width: 100vw;
+      height: 87.5vh;
+    }
+}

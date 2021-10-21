@@ -1,0 +1,160 @@
+*{
+    padding: 0px;
+    margin:0px;
+}
+a{
+    text-decoration: none;
+}
+.login-icon{
+    font-size: xx-large;
+}
+
+.login{
+    display: flex;
+    /* height: 100vh; */
+    width: 100vw;
+    justify-content: center;
+
+}
+.login_body{
+    width: 40%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cornsilk;
+    border-radius: 20px;
+}
+.choice{
+    display: flex;    
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: center;
+
+}
+.choice>a{
+    width: 50%;
+}
+
+.choice_other{
+    background-color: #031e29;
+    color: whitesmoke!important;
+}
+.choice_text{
+    font-size: x-large;
+    font-weight: bold;
+    width: 100%;
+    /* padding: 20px; */
+    text-align: center;
+    padding: 20px 0px;
+    color: #031e29;
+}
+.login_details{
+    padding: 30px 5px;
+
+    width: 80%;
+
+}
+.form_content{
+    display: flex;
+    padding: 10px 15px;
+    /* width: 100%; */
+    align-items: center;
+    /* justify-content: center; */
+    font-size: larger;
+    background-color: #031e29;
+    color: whitesmoke;
+    margin: 15px 0px;
+}
+.form_content>input{
+    flex: 1;
+    padding: 8px;
+    border: none;
+    font-size: large;
+    background-color: #031e29;
+    outline: none;
+    color: whitesmoke;
+    /* borde */
+}
+.invalid_id{
+    font-size: medium;
+    color: red;
+    display: none;
+}
+.login_btn{
+    padding: 15px 20px;
+    font-size: larger;
+    cursor: pointer;
+    background-color: #031e29;
+    color: white;
+    box-shadow: 0px 0px 5px black;
+    margin: 10px 0px;
+}
+.login_btn:hover{
+    box-shadow: 0px 0px 10px black;
+
+}
+
+/* ------------------------------Media Query ----------------------------------*/
+
+@media screen and (max-width: 900px){
+    .login_body{
+        width: 50%;
+    }
+    
+}
+@media screen and (max-width: 700px){
+    .login_body{
+        width: 60%;
+    }
+    .choice_text{
+        font-size: larger;
+    }
+    
+}
+@media screen and (max-width: 550px){
+    .login_body{
+        width: 70%;
+    }
+    .choice_text{
+        font-size: larger;
+    }
+    
+}
+@media screen and (max-width: 480px){
+    .login_details{
+        width: 90%;
+    }
+    .choice_text, .login_btn{
+        font-size: large;
+    }
+    .login-icon{
+        font-size: x-large;
+    }
+}
+@media screen and (max-width: 420px){
+    
+    .login_body{
+        width: 83%;
+    }
+    .choice_text, .login_btn{
+        font-size: 16px;
+    }
+    
+}
+@media screen and (max-width: 360px){
+    
+    .login_body{
+        width: 90%;
+    }
+    .login_details{
+        width: 95%;
+        padding: 25px 5px;
+    }
+    .choice{
+        margin-bottom: 10px;
+    }
+
+
+}
+/* .form_content> */

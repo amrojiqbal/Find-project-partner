@@ -1,0 +1,227 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+.profile-body{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    margin-top: 30px;
+}
+.profile{
+    /* background-color: #ffe1df; */
+    background-image: url("https://149364069.v2.pressablecdn.com/wp-content/uploads/2016/11/free-blue-background.jpg");
+
+    display: flex;
+    justify-content: space-between;
+    padding: 35px 25px;
+    width: 75vw;
+    border-radius: 15px;
+
+}
+.MuiAvatar-img{
+    object-fit: fill;
+}
+#profile-avatar{
+    width: 200px;
+    border-radius: 50%;
+    /* display: block; */
+    box-shadow: 0px 0px 7px black;
+    height: 200px;
+}
+
+.profile-details{
+    flex: 0.8;
+}
+.profile-name{
+    margin-bottom: 20px;
+}
+.profile-name>h2{
+    margin-bottom: 10px;
+}
+.profile-name>p{   
+    color: blue;
+    font-weight: bold;
+    font-size: large;
+}
+.profile-about{
+    border-bottom: 3px solid grey;
+    margin-bottom: 25px;
+}
+.profile-about>h2{
+    margin-bottom: 5px;
+}
+.profile-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.name{
+    font-weight: bold;
+    font-size: large;
+
+}
+.value{
+    color: blue;
+    font-weight: bold;
+    width: 50%;
+    font-size: large;
+    /* background-color: yellow; */
+}
+.profile-update{
+    display: flex;
+    flex-direction: column;
+}
+.edit-profile,.logout{
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 18px;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+.edit-profile:hover{
+    color: white;
+    background-color: cornflowerblue;
+}
+.logout:hover{
+    color: white;
+    background-color: tomato;
+}
+
+/* -------------------------------------Media Query------------------------------------------- */
+
+@media screen and (max-width: 900px){
+    .profile{
+        padding: 25px 20px;
+        width: 80vw;
+    }
+}
+@media screen and (max-width: 780px){
+    #profile-avatar{
+        width: 180px;
+        height: 180px;
+
+    }
+    .profile-name>p,.value,.name{
+        font-size: 19px;
+    }
+    .edit-profile,.logout{
+        padding: 8px;
+        font-size: 15px;
+        border-radius: 15px;
+    }
+    .profile-name{
+        margin-bottom: 15px;
+    }
+    
+
+    
+}
+@media screen and (max-width: 650px){
+    .profile{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile-details{
+        width: 80%;
+    }
+    .profile-name{
+        text-align: center;
+        margin-top: 10px;
+    }
+    .profile-update{
+        flex-direction: row;
+        width: 80%;
+        margin-top: 15px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .edit-profile,.logout{
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 17px;
+    }
+}
+@media screen and (max-width: 530px){
+    
+    .profile{
+        width: 85vw;
+        padding: 20px 15px;
+    }
+    .profile-details{
+        width: 85%;
+    }
+    .profile-name>p,.value,.name{
+        font-size: 18px;
+    }
+    .profile-body{
+        margin-top: 5px;
+    }
+}
+@media screen and (max-width: 430px){
+    
+    .profile-name>p,.value,.name{
+        font-size: 17px;
+    }
+    #profile-avatar{
+        width: 175px;
+        height: 175px;
+
+    }
+    .edit-profile,.logout{
+        padding: 11px;
+        font-size: 16px;
+        border-radius: 20px;
+    }
+    .profile-row{
+        margin-right: 30px;
+    }
+    .profile{
+        width: 96vw;
+    }
+}
+@media screen and (max-width: 380px){
+    .profile-name>p,.value,.name{
+        font-size: 16px;
+    }
+    #profile-avatar{
+        width: 170px;
+        height: 170px;
+    }
+    .profile-details{
+        width: 93%;
+    }
+    .profile-body{
+        margin-top: 0px;
+    }
+}
+@media screen and (max-width: 330px){
+    .profile-name>p,.value,.name{
+        font-size: 15px;
+    }
+    .profile{
+        padding: 15px 20px;
+    }
+    #profile-avatar{
+        width: 160px;
+        height: 160px;
+    }
+    .profile-details{
+        width: 100%;
+    }
+    .profile-personal{
+        width: 88%;
+    }
+    
+    .edit-profile,.logout{
+        padding: 10px;
+        font-size: 15px;
+    }
+    .profile-row{
+        margin-bottom: 13px;
+    }
+
+}

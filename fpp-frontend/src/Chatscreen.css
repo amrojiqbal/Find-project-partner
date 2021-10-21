@@ -1,0 +1,114 @@
+.chatscreen{
+    display: flex;
+    flex-direction: column;
+    flex: 0.7;
+    background-repeat: repeat;
+    background-position: center;
+    background-color: #eed0c7;
+    /* place-items: center; */
+    
+}
+.chatscreen_header{
+    display: flex;
+    align-items: center;
+    background-color: #b74116;
+    border-bottom: 1px solid #f6f6f6;
+    padding: 16px 30px;
+}
+.chatscreen_header>span{
+    color: white;
+    font-weight: bold;
+    margin-left: 15px;
+    font-size: large;
+}
+.chatscreen_div{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* align-items: center; */
+    padding: 16px;
+    overflow-y: auto;
+}
+.chatscreen_div>p{
+    width: fit-content;
+    max-width: 65%;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+.chatscreen_text{
+    overflow-wrap: break-word;
+    background-color: rgb(206, 84, 39);
+    padding: 15px;
+    border-radius: 20px;
+    margin-left: 10px;
+    
+}
+.chatscreen_user{
+    background-color: lightskyblue;
+    margin-left: auto;
+    padding: 15px;
+    border-radius: 20px;
+    
+}
+.chatscreen_footer{
+    display: flex;
+    align-items: center;
+    background-color: #b74116;
+    height: 55px;
+    padding: 15px;
+    justify-content: space-between;
+}
+.chatscreen_footer>form{
+    display: flex;
+
+    flex: 1;
+
+}
+.chatscreen_footer>form>input{
+    flex: 1;
+    font-size: large;
+    border: none;
+    padding: 8px;
+    border-radius: 20px;
+    margin: 0px 5px;
+    outline: none;
+}
+.chatscreen_footer>form>button{
+    border: none;
+    background-color: #b74116;
+    font-weight: bold;
+    color: white;
+    cursor:pointer
+}
+.footer_icon{
+    font-size: 30px!important;
+}
+/* Emoji CSS */
+.MuiSvgIcon-root{
+    color: white;
+}
+@media screen and (max-width:780px) {
+    .chatscreen{
+        flex:1;
+        width: 100%;
+    }
+}
+@media screen and (max-width:400px) {
+    .chatscreen_header{
+        padding: 12px 10px;
+    }
+    .chatscreen_header>span{
+        font-size: medium;
+    }
+    .chatscreen_user,.chatscreen_text{
+        padding: 12px 10px;
+    }
+    .chatscreen_footer{
+        padding: 7px;
+    }
+    .chatscreen_footer>form>input{
+        font-size: medium;
+        padding: 8px;
+    }
+    
+}

@@ -1,0 +1,33 @@
+
+.header{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.header-icon{
+    color: white;
+}
+.header-home{
+    font-size: 50px!important;
+    color: #ff5605!important;
+}
+
+@media screen and (max-width: 450px){
+    
+    .header-icon{
+        font-size: 35px!important;
+    }
+    .header-home{
+        font-size: 40px!important ;
+    }
+}
+@media screen and (max-width: 350px){
+    
+    .header-icon{
+        font-size: 30px!important;
+    }
+    .header-home{
+        font-size: 35px!important ;
+    }
+}

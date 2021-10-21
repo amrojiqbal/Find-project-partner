@@ -1,0 +1,130 @@
+.createform{
+    width: 100vw;
+}
+.createform_body{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cornsilk;
+    border-radius: 20px;
+    padding: 20px 60px;
+}
+.createform_input{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    margin-bottom: 15px;
+}
+.createform_input>span{
+    margin-right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+.input{
+    /* background-color: red; */
+    width: 55%;
+}
+textarea, select,.btn, .input>input{
+    background-color: #031e29;
+    color: whitesmoke;
+    font-size: larger;
+    padding: 10px;
+    /* max-width: 258px; */
+}
+.profile_select{
+    background-color: #031e29;
+    color: whitesmoke;
+    font-size: larger;
+    width: 50%;
+    padding: 10px;
+
+}
+.profile_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.profile_div>label>img{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    display: block;
+    box-shadow: 0px 0px 7px black;
+}
+label{
+    cursor: pointer;
+}
+.form_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn{
+    border-radius: 8px;
+    padding: 15px 20px;
+    /* font-size: larger; */
+    cursor: pointer;
+    box-shadow: 0px 0px 5px black;
+    margin: 10px 5px;
+
+}
+.btn:hover{
+    box-shadow: 0px 0px 10px black;
+
+}
+@media screen and (max-width:800px){
+    .createform{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:600px){
+    .createform_body{
+        padding: 20px 25px;
+    }
+}
+@media screen and (max-width:470px){
+    .createform_body{
+        padding: 20px 25px;
+        width: 80%;
+    }
+    .createform_input{
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .createform_input>span {
+        font-size: 22px;
+    }
+    textarea, select, .btn, .input>input{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:380px){
+    .createform_body{
+        padding: 20px 25px;
+        width: 85%;
+    }
+    
+    .createform_input>span {
+        font-size: 20px;
+    }
+    textarea, select, .btn, .input>input{
+        font-size: 20px;
+    }
+}
+@media screen and (max-width:320px){
+    .createform_body{
+        padding: 20px 25px;
+        width: 95%;
+    }
+    
+    .createform_input{
+        margin-bottom: 10px;
+    }
+}

@@ -1,0 +1,217 @@
+
+/* --------------------------------Testing ---------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+* {
+	box-sizing: border-box;
+}
+body{
+  font-family: Montserrat, sans-serif;
+}
+
+.tinder-card{
+  position: absolute;
+}
+.card_name{
+  margin: 10px 0px;
+}
+.card_role{
+  margin: 10px 0;
+  color:#2ba6bd;
+}
+h5 {
+	margin: 5px 0;
+	text-transform: uppercase;
+}
+
+p {
+	font-size: 14px;
+	line-height: 21px;
+}
+.card-outer{
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.card-container {
+	background-color: #231E39;
+	border-radius: 5px;
+	box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.75);
+	color: #B3B8CD;
+	padding-top: 30px;
+	/* position: relative; */
+	width: 350px;
+	max-width: 100%;
+	text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-container .pro {
+	color: #231E39;
+	background-color: #FEBB0B;
+	border-radius: 3px;
+	font-size: 14px;
+	font-weight: bold;
+	padding: 3px 7px;
+	position: absolute;
+	top: 30px;
+	left: 30px;
+}
+
+#round {
+	border: 4px solid #03BFCB;
+
+  height: 180px;
+  width: 180px;
+}
+.MuiAvatar-img{
+  object-fit: fill!important;
+}
+
+button.primary {
+	background-color: #03BFCB;
+	border: 1px solid #03BFCB;
+	border-radius: 3px;
+	color: #231E39;
+	font-family: Montserrat, sans-serif;
+	font-weight: 500;
+	padding: 10px 25px;
+}
+
+button.primary.ghost {
+	background-color: transparent;
+	color: #02899C;
+}
+
+.card_skills {
+	background-color: #1F1A36;
+	text-align: left;
+	padding: 15px;
+	margin-top: 30px;
+  width: 100%;
+}
+
+.card_skills ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.card_skills ul li {
+	border: 1px solid #2D2747;
+	border-radius: 2px;
+	display: inline-block;
+	font-size: 14px;
+	margin: 0 7px 7px 0;
+	padding: 7px;
+  color: #2ba6bd;
+}
+.card_social{
+  display: flex;
+  width: 50%;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.card_social img{
+  cursor: pointer;
+  width: 32px;
+  margin-right: 5px;
+}
+#card_linkedin{
+  width: 40px;
+}
+.card_social img:hover{
+  transform: scale(1.2);
+}
+.noprofile{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.left{
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex:0.5;
+  font-family: 'Baloo Bhai 2', cursive;
+  text-align: center;
+}
+.right{
+  flex:0.5;
+}
+.right>img{
+  width: 400px;
+}
+
+@media screen and (max-width: 700px){
+  .left{
+    font-size: 20px;
+  }
+  .right>img{
+    width: 350px;
+  }
+}
+@media screen and (max-width: 500px){
+  .left{
+    font-size: 18px;
+  }
+  .right>img{
+    width: 280px;
+  }
+}
+@media screen and (max-width: 430px){
+  
+  .noprofile{
+    flex-direction: column;
+  }
+  .left{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  .right>img{
+    width: 250px;
+  }
+  .card-container{
+    width: 80vw;
+    padding-top: 20px;
+  }
+  .card_skills{
+    margin-top: 20px;
+  }
+  #round{
+      height: 160px!important;
+      width: 160px!important;
+  }
+  
+}
+@media screen and (max-width: 350px){
+    .card-container{
+      width: 85vw;
+      padding-top: 10px;
+    }
+    .card_name,.card_role{
+      font-size: 20px;
+      margin: 8px 0px;
+    }
+    .card_role{
+      font-size: 18px!important;
+    }
+    h5{
+      font-size: 13px;
+    }
+    .card_social img{
+      width: 28px;
+    }
+    #card_linkedin{
+      width: 37px;
+    }
+
+}
